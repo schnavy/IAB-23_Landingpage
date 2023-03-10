@@ -52,6 +52,7 @@ position: absolute;
   color: #50d691;
 line-height: 1;
   mix-blend-mode: multiply;
+  pointer-events: none;
 }
 .content{
     position: absolute;
