@@ -1,5 +1,5 @@
 let textContainer = document.querySelector(".text");
-let palette = document.querySelector(".palette");
+let palette = document.querySelector(".palette-container");
 let texts = document.querySelectorAll(".big");
 
 function shufflealignement() {
