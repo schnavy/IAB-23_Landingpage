@@ -15,6 +15,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
+  user-select: none;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
 
 .text {
   padding: 10px;
+  user-select: none;
 }
 .big {
   font-size: 6rem;
@@ -52,7 +54,7 @@ body {
   color: #50d691;
   line-height: 1;
   mix-blend-mode: multiply;
-  user-select: none; /* Standard syntax */
+  user-select: none;
 }
 .content {
   position: absolute;
@@ -79,11 +81,35 @@ body {
   display: block;
 }
 
-@media (max-width: 998px) {
-
-.big{
-  font-size: 2.5rem;
+@media (max-width: 786px) {
+  .big {
+    font-size: 2.5rem;
+  }
 }
+
+@media (min-width: 786px) {
+  .big {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 999px) {
+  .big {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .big {
+    font-size: 5.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .big {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 800px) {
   .palette.p-mobile {
     display: block;
   }
