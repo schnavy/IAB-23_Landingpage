@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "AG Buch Condensed BQ";
+  src: url("fonts/AGBuchCondensedBQ-Medium.woff2") format("woff2"),
+    url("fonts/AGBuchCondensedBQ-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  font-family: "AG Buch Condensed BQ";
+}
+
+.left-bar {
+  height: 100vh;
+  position: fixed;
+  left: 10px;
+}
+
+.left-bar .green {
+display: inline-block;
+  height: 100%;
+  width: 5px;
+  background-color: #50d691;
+}
+
+.left-bar .pink {
+display: inline-block;
+position: absolute;
+  height: 100%;
+  left: 5px;
+  width: 5px;
+  background-color: rgb(231, 37, 237);
+}
+
+.text {
+  padding: 10px;
+}
+.big {
+  font-size: 6rem;
+  width: 100%;
+  color: #50d691;
+line-height: 1;
+  mix-blend-mode: multiply;
+}
+.content{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+}
+
+.palette {
+  z-index: -10;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+
+.middle {
+  text-align: center;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.logo {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+@media(max-width: 1000px) {
+    .logo img {
+        height: 20px;
+    }
+}
