@@ -2,6 +2,12 @@ let textContainer = document.querySelector(".text");
 let palette = document.querySelector(".palette-container");
 let texts = document.querySelectorAll(".big");
 
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+     (navigator.maxTouchPoints > 0) ||
+     (navigator.msMaxTouchPoints > 0));
+}
+
 function shufflealignement() {
   texts.forEach((text) => {
     text.classList.remove("right");
@@ -38,12 +44,19 @@ window.addEventListener("mousemove", () => {
 let state = 0;
 
 window.addEventListener("click", () => {
+  clickTouchHandler();
+});
+window.addEventListener("touchend", () => {
+  clickTouchHandler();
+});
+
+
+function clickTouchHandler() {
   shufflealignement();
   suffleRotation();
 
   state = state > 2 ? 0 : state += 1;
   console.log(state);
-
 
   textContainer.classList.remove("hidden");
   palette.classList.remove("hidden");
@@ -53,4 +66,4 @@ window.addEventListener("click", () => {
   } else if (state == 2) {
     palette.classList.add("hidden");
   }
-});
+}
