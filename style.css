@@ -34,7 +34,7 @@ a{
 .left-bar .green {
   display: inline-block;
   height: 100%;
-  width: 3px;
+  width: 4px;
   background-color: #50d691;
 }
 
@@ -42,8 +42,8 @@ a{
   display: inline-block;
   position: absolute;
   height: 100%;
-  left: 3px;
-  width: 3px;
+  left: 4px;
+  width: 4px;
   background-color: rgb(231, 37, 237);
 }
 
@@ -130,7 +130,7 @@ a{
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .logo {

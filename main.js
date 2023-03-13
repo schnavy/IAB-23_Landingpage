@@ -1,6 +1,8 @@
 let textContainer = document.querySelector(".text");
 let palette = document.querySelector(".palette-container");
 let texts = document.querySelectorAll(".big");
+let greenLine = document.querySelector(".green");
+let pinkLine = document.querySelector(".pink");
 
 function isTouchDevice() {
   return (
@@ -65,10 +67,14 @@ function clickTouchHandler() {
 
   textContainer.classList.remove("hidden");
   palette.classList.remove("hidden");
+  pinkLine.classList.remove("hidden");
+  greenLine.classList.remove("hidden");
 
   if (state == 0) {
     textContainer.classList.add("hidden");
+    greenLine.classList.add("hidden");
   } else if (state == 1) {
     palette.classList.add("hidden");
+    pinkLine.classList.add("hidden");
   }
 }
